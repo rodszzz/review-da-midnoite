@@ -7,3 +7,17 @@ body {
   color: black;
   font-family: Verdana;
 }
+
+.main {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
