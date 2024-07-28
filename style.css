@@ -1,23 +1,210 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  background-image: url("https://i.imgur.com/jdEamQr.png");
+  background-color: #f8eeda;
+  margin: 7%;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  color: #967e68;
 }
 
-.main {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-evenly;
+.sidebg {
+  background-image: url("https://i.imgur.com/WWd5ZJ1.png");
+  background-repeat: repeat-y;
+  background-position: top right;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.review {
+.side {
+  background-color: #fffefc;
+  width: 176px;
+  height: 100%;
+  padding: 1rem 0.5rem 1rem 1rem;
+  text-align: justify;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.desc {
+  padding: 0.5rem;
+}
+
+.sideheaders {
+  font-family: "Love Ya Like A Sister", serif;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.side ul {
+  padding-left: 2.5rem;
+}
+
+.side li {
+  list-style-image: url("https://i.imgur.com/iqIEW3A.gif");
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.headerwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: "Love Ya Like A Sister", serif;
+  font-weight: normal;
+  color: #8f7c66;
+  font-size: 46px;
+  align-self: end;
+  margin-left: -1rem;
+}
+
+.headerimg {
+  width: 285px;
+  align-self: end;
+  margin-right: -1rem;
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.boxgap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  background-color: #fffefc;
+  border: 3px solid #967e68;
+}
+
+.left {
+  border-right: 3px solid #967e68;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+.icon {
+  border: 2px solid #967e68;
+  width: 96px;
+}
+
+.right {
+  padding: 1rem;
+}
+
+a {
+  color: #76afc2;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #76afc2;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:active {
+  font-style: italic;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #967e68;
+}
+
+#credit {
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 760px) {
+  body {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .sidebg {
+    background-image: none;
+    position: relative;
+    top: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .side {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .side ul {
+    padding: 0;
+  }
+
+  .side li {
+    display: inline;
+    margin-left: 4px;
+  }
+
+  .avatar {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .headerimg {
+    width: 64px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin: 0;
+  }
 }
