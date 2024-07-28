@@ -81,6 +81,15 @@ body {
   margin-left: -1rem;
 }
 
+.second-title {
+  font-family: "Love Ya Like A Sister", serif;
+  font-weight: normal;
+  color: #8f7c66;
+  font-size: 36px;
+  align-self: end;
+  margin-left: -1rem;
+}
+
 .headerimg {
   width: 285px;
   align-self: end;
@@ -88,6 +97,11 @@ body {
   margin-bottom: -1rem;
   position: relative;
   z-index: 1;
+}
+
+.main-txt {
+  background-color: #fffefc;
+  border: 3px solid #967e68;
 }
 
 .boxgap {
@@ -205,6 +219,11 @@ a:active {
 
   .title {
     font-size: 36px;
+    margin: 0;
+  }
+
+  .second-title {
+    font-size: 24px;
     margin: 0;
   }
 }
